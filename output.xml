@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.11.3 on win32)" generated="2024-08-15T14:14:34.642572" rpa="false" schemaversion="5">
+<suite id="s1" name="Pyhton-Core" source="C:\Users\Artsem_Nikulin\PycharmProjects\pyhton-core">
+<suite id="s1-s1" name="Test Sample" source="C:\Users\Artsem_Nikulin\PycharmProjects\pyhton-core\test_sample.robot">
+<test id="s1-s1-t1" name="Test 2" line="5">
+<kw name="Raise 2 To The Power Of 3" owner="ClassLibrary" source_name="Raise ${base} to the power of ${power}">
+<msg time="2024-08-15T14:14:34.672593" level="INFO">Got base=2, power=3</msg>
+<msg time="2024-08-15T14:14:34.672593" level="INFO">${result} = 8</msg>
+<var>${result}</var>
+<doc>The keyword should take two embedded arguments: 'base', after the word 'raise', and
+'power', after the word 'of'.
+Use the 'keyword' decorator from robot.api.deco module to implement embedded arguments.
+Arguments should be converted to integers.
+The keyword should log a following message when called: "Got base=&lt;value&gt;, power=&lt;value&gt;"
+For example: "Got base=4, power=3"
+Logs should appear in the console.
+The keyword should return an integer: 'base' raised to the power of 'power'.
+For example, with base=2 and power=4: 16</doc>
+<status status="PASS" start="2024-08-15T14:14:34.672593" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<msg time="2024-08-15T14:14:34.673572" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<msg time="2024-08-15T14:14:34.673572" level="FAIL">8 != My name is Jame</msg>
+<arg>${result}</arg>
+<arg>My name is Jame</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="FAIL" start="2024-08-15T14:14:34.673572" elapsed="0.000000">8 != My name is Jame</status>
+</kw>
+<status status="FAIL" start="2024-08-15T14:14:34.671571" elapsed="0.002001">8 != My name is Jame</status>
+</test>
+<status status="FAIL" start="2024-08-15T14:14:34.667572" elapsed="0.008001"/>
+</suite>
+<status status="FAIL" start="2024-08-15T14:14:34.643571" elapsed="0.033001"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Pyhton-Core">Pyhton-Core</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Test Sample">Pyhton-Core.Test Sample</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
